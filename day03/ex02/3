@@ -1,0 +1,14 @@
+from ScrapBooker import ScrapBooker
+import matplotlib.pyplot as plt
+
+
+r = ScrapBooker()
+
+#img = open("../resources/42AI.png", "")
+imgn = plt.imread("../resources/42AI.png")
+#plt.imshow(imgn)
+#plt.show()
+
+imgn = r.mosaic(imgn, (3,2))
+plt.imshow(imgn)
+plt.show()
